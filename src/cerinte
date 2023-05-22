@@ -1,0 +1,68 @@
+
+
+////////////////////
+
+
+1. Restaurantul servește mai multe tipuri de supe: supă de legume, supă de ciuperci, supă de vită, etc.
+ Să se implementeze modulul care permite realizarea de obiecte din familia supelor.
+ Modulul trebuie realizat, astfel încât pentru adăugări de noi tipuri de supă să nu fie necesare modificări în codul existent.
+
+
+2. Atunci când un client face o rezervare poate alege una din următoarele opțiuni: așezare la geam,
+scaune ergonomice, decorarea mesei, muzica ambientala personalizata, gen muzica. În cazul în
+care clientul nu specifică vreun element dintre acestea, este setat pe false. Să se implementeze
+modulul care permite crearea de obiecte de tip rezervare cu aceste opțiuni extra.
+
+
+3. Restaurantul servește mai multe tipuri de supe: supă de legume, supă de ciuperci, supă de vită,
+etc. Să se implementeze modulul care permite realizarea de obiecte din familia supelor. Tipurile
+de supă sunt reținute în cadrul unui enum.
+
+4. Restaurantul dorește să implementeze un modul în cadrul aplicației, astfel încât dacă un client a
+mai fost la restaurant și revine pentru a fi realiza o rezervare aici să nu fie necesară reconstruirea
+unui cont respectivului client, deoarece prin construire clientului durează foarte mult.
+
+5. Restaurantul achiziționează un nou soft nou pentru lucrul de la bar, însă acesta nu este compatibil
+cu softul de printare facturi folosit pentru produsele de la bucătărie. Vechiul soft era compatibil
+deoarece au fost realizate de aceeași echipa. Să se implementeze un nivel intermediar prin care
+noul soft să poată fi folosit cu softul existent, fără a se modifica codul din vreo aplicație
+
+6. În momentul în care un client vine la restaurant pentru o masă, recepționistul trebuie să verifice
+  dacă are masă liberă, apoi să verifice dacă acea masă a fost debarasată de la plecarea ultimului
+  client, de asemenea trebuie să verifice dacă au fost puse șervețele noi pe masă. Managerul
+  restaurantului dorește realizarea unui modul care să simplifice munca recepționistului și să nu mai
+  fie nevoit să verifice în toate locurile ci doar într-un singur loc.
+
+7. Cu ocazia sărbătorilor de sfârșit de an managerul restaurantului dorește ca atunci când este
+  printat o notă să se printeze și o felicitare de la Mulți ani pentru client. Se dorește adăugarea acestei
+  noi funcționalități pentru clasa NotaDePlata la printare.
+
+8. Este dorita reprezentarea meniului in cadrul aplicației. Meniul conține secțiuni (startere, băuturi,
+desert, etc.) fiecare secțiune poate conține subsecțiuni (sucuri, cafea, etc) sau item-uri (, apa plata,
+apa minerala, etc). Sa se realizeze modulul care permite reprezentarea arborescenta a meniului
+restaurantului.
+
+10. Pentru fiecare rezervare trebuie să se rețină informații cu privire la clientul restaurantului
+precum: nume, număr de telefon, adresă de mail, etc, precum și informațiile despre masa rezervata:
+număr masa, număr persoane, ora rezervare, etc. Astfel, dacă un client realizează mai multe
+rezervări, la fiecare rezervare, informațiile despre client sunt aceleași și se repetă, ocupând foarte
+multă memorie. Să se implementeze modulul de memorare al rezervărilor astfel încât să nu ocupe
+memorie foarte multă. --flyweight
+
+9. Managerul restaurantului dorește ca atunci când cineva dorește să realizez e o rezervare sa fie
+permisă doar dacă aceasta este realizată pentru minim 4 persoane. În sens contrar rezervarea nu
+este realizata, iar persoanele sunt rugate să se prezinte la restaurant deoarece sunt suficiente locuri
+pentru mesele de doua persoane. Sa se realizeze un nivel intermediar care sa condiționeze
+realizarea rezervărilor de numărul de persoane. --proxy
+
+
+11. Este dorită implementarea modului de plată pentru clienții restaurantului. Modul de plată îl
+decide clientul în momentul în care trebuie să facă plata. Plata se poate realiza cu cardul sau
+cash. Sa se implementeze modulul de plata al restaurantului. --STRATEGY
+
+EXTRA. Atunci când un client vine la banca, procesarea documentelor se realizează în funcție de tipul
+de client. Pentru clienții persoane fizice se solicită doar buletinul și adeverință de la munca, iar
+pentru clienții persoane juridice se solicita actele de înființare a firmei precum si dovada
+înregistrării la Registrul comerțului. Sa se implementeze modulul de verificare acte, știindu-se
+faptul că un client anunță când ajunge la ghișeu ce fel de client este. Deci stabilirea modului de
+procesare se stabilește la run-time.  --STRATEGY
